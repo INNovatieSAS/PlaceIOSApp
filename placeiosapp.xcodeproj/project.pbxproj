@@ -14,6 +14,8 @@
 		CCA3802719F752D20042B435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA3802619F752D20042B435 /* Images.xcassets */; };
 		CCA3802A19F752D20042B435 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA3802819F752D20042B435 /* LaunchScreen.xib */; };
 		CCA3803619F752D90042B435 /* placeiosappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3803519F752D90042B435 /* placeiosappTests.swift */; };
+		CCA3804219F75A430042B435 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3804119F75A430042B435 /* LoginViewController.swift */; };
+		CCECFDCE19F9F2A90037B4E6 /* LoginUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCECFDCD19F9F2A90037B4E6 /* LoginUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		CCA3802F19F752D90042B435 /* placeiosappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = placeiosappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3803419F752D90042B435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA3803519F752D90042B435 /* placeiosappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = placeiosappTests.swift; sourceTree = "<group>"; };
+		CCA3804119F75A430042B435 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = placeiosapp/login/LoginViewController.swift; sourceTree = "<group>"; };
+		CCECFDCD19F9F2A90037B4E6 /* LoginUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginUtil.swift; path = placeiosapp/login/LoginUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		CCA3800E19F752CA0042B435 = {
 			isa = PBXGroup;
 			children = (
+				CCA3804319F75A4B0042B435 /* login */,
 				CCA3801919F752CF0042B435 /* placeiosapp */,
 				CCA3803219F752D90042B435 /* placeiosappTests */,
 				CCA3801819F752CF0042B435 /* Products */,
@@ -113,6 +118,15 @@
 				CCA3803419F752D90042B435 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCA3804319F75A4B0042B435 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				CCA3804119F75A430042B435 /* LoginViewController.swift */,
+				CCECFDCD19F9F2A90037B4E6 /* LoginUtil.swift */,
+			);
+			name = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA3804219F75A430042B435 /* LoginViewController.swift in Sources */,
 				CCA3802219F752D10042B435 /* ViewController.swift in Sources */,
+				CCECFDCE19F9F2A90037B4E6 /* LoginUtil.swift in Sources */,
 				CCA3801D19F752CF0042B435 /* AppDelegate.swift in Sources */,
 				CCA3802019F752D10042B435 /* placeiosapp.xcdatamodeld in Sources */,
 			);
@@ -409,6 +425,7 @@
 				CCA3803B19F752E00042B435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCA3803C19F752E10042B435 /* Build configuration list for PBXNativeTarget "placeiosappTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				CCA3803E19F752E10042B435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
